@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\User -I.\Libraries\CMSIS -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\APP\led -I.\Public -I.\APP\DFRobot_wifi_iot
+-I C:\Keil_v5\ARM\RV31\INC
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD
+-o .\obj\dfrobot_queue.o --omf_browse .\obj\dfrobot_queue.crf --depend .\obj\dfrobot_queue.d "Public\DFRobot_queue.c"
